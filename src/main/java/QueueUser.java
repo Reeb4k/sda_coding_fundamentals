@@ -1,6 +1,6 @@
 public class QueueUser {
         public static void main(String[] args) {
-            Queue queue = new Queue(10);
+            Queue queue = new Queue(4);
             System.out.println("initial state");
             System.out.println(queue);
             System.out.println("enqueue 1");
