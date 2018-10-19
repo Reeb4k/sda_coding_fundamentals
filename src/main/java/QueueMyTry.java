@@ -12,14 +12,9 @@ public class QueueMyTry {
         if (currentSize == queueArray.length) {
             throw new IllegalStateException("Overflow");
         }
-//        else if (currentSize == queueArray.length - 1){
-//            for (int i = currentSize - 1; i >= 0; i--) {
-//                queueArray[i + 1] = queueArray[i];
-//            } queueArray[0] = value;
-//        }
-        else {for (int i = currentSize - 1; i >= 0; i--) {
+        for (int i = currentSize - 1; i >= 0; i--) {
             queueArray[i + 1] = queueArray[i];
-        }}
+        }
         queueArray[0] = value;
         currentSize++;
     }
